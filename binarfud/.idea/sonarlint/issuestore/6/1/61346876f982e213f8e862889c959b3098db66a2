@@ -1,2 +1,4 @@
 
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ð¶îÙJ$c664cbfc-7f97-44e9-8a88-6a90d50eb8fe
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ð¶îÙ8èÝÖŒ‚2
+k
+java:S1128"IRemove this unused import 'org.springframework.kafka.core.KafkaTemplate'.(˜€›‹üÿÿÿÿ8žÞÖŒ‚2

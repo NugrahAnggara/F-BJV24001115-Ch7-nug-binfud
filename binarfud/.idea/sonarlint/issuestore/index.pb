@@ -37,3 +37,7 @@ asrc/main/java/com/example/BEJ1_SYNERGY/_Nugrah/Anggara/Siregar_Challange4/Model
 fsrc/main/java/com/example/BEJ1_SYNERGY/_Nugrah/Anggara/Siregar_Challange4/Service/UserServiceImpl.java,4\0\40fe9c885ba3d433e41867229344246c9635ceab
 ’
 bsrc/main/java/com/example/BEJ1_SYNERGY/_Nugrah/Anggara/Siregar_Challange4/Service/UserService.java,7\2\7264c854a15d04882ab1a15beb95f0ad07cf8d1b
+ 
+psrc/main/java/com/example/BEJ1_SYNERGY/_Nugrah/Anggara/Siregar_Challange4/config/KafkaProducerConfiguration.java,a\5\a5efc5192802e59e859aefec33843c23caae8a68
+—
+gsrc/main/java/com/example/BEJ1_SYNERGY/_Nugrah/Anggara/Siregar_Challange4/Model/Dto/UserRequestDto.java,d\7\d79eef0734e5bb5740e5a9fe3060c18b24da36b6

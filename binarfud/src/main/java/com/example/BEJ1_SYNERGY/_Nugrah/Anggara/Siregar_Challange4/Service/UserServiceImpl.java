@@ -7,6 +7,7 @@ import com.example.BEJ1_SYNERGY._Nugrah.Anggara.Siregar_Challange4.Repository.Us
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -15,6 +16,9 @@ import java.util.*;
 public class UserServiceImpl implements UserService{
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private KafkaTemplate<String,String> kafkaTemplate;
 
     @Autowired
     private ModelMapper mapper;
@@ -33,6 +37,7 @@ public class UserServiceImpl implements UserService{
         dataUser.setPassword(userRequestDto.getPassword());
         User user = userRepository.save(dataUser);
 
+        kafkaTemplate.send("addUser","Berhasil Menambahkan User " + userRequestDto.getUsername());
         return this.mapper.map(user, UserResponseDto.class);
     }
 
@@ -72,6 +77,12 @@ public class UserServiceImpl implements UserService{
     @Override
     public Map<String,Object> deleteUser(UUID id) {
         Map<String,Object> body = new HashMap<>();
+        User findUser = userRepository.findById(id).orElse(null);
+
+        if (findUser != null){
+            kafkaTemplate.send("deleteUser","Berhasil Menghapus User " + findUser.getUsername());
+        }
+
         userRepository.deleteById(id);
         body.put("statuscode",HttpStatus.OK.value());
         body.put("message",HttpStatus.OK.getReasonPhrase());

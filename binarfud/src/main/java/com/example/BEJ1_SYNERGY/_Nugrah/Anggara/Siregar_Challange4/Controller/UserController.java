@@ -8,6 +8,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
@@ -22,7 +23,7 @@ public class UserController {
     private ModelMapper mapper;
 
     @PostMapping(path = "/registrasi")
-    public ResponseEntity<UserResponseDto> addUser(@ModelAttribute UserRequestDto user){
+    public ResponseEntity<UserResponseDto> addUser(@RequestBody UserRequestDto user){
         return new ResponseEntity<>(userService.addUser(user),HttpStatus.OK);
     }
 
