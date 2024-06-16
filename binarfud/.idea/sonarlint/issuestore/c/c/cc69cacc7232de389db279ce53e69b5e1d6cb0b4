@@ -1,0 +1,9 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ð¶îÙJ$76060fe4-8008-4c3b-a14e-cc37517c7f1b
+p
+java:S3655."NCall "product.isPresent()" or "!product.isEmpty()" before accessing the value.(×ó§Õÿÿÿÿÿ8™ÿàˆ‚2
+j
+java:S3655."HCall "user.isPresent()" or "!user.isEmpty()" before accessing the value.(×ó§Õÿÿÿÿÿ8™ÿàˆ‚2
+ˆ	java:S116"NRename this field "LOG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úúÈ%J$204ee98f-98c9-4e22-94ac-d23df623f8a4
+b
+java:S1068"'Remove this unused "LOG" private field.(úúÈ%J$9f6b5a98-2032-4f44-a509-5da64aa18aff

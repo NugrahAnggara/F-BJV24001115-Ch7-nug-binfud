@@ -1,0 +1,7 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ĞÊÔşÿÿÿÿJ$3ed0771d-4ee0-4c01-9e95-660a2e570043
+˜	java:S116"XRename this field "email_address" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡âÓèøÿÿÿÿJ$f9ef2d49-ab87-40b4-9db7-01d0199bcba8
+p
+java:S1128	".Remove this unused import 'java.util.HashSet'.(Ê‚êX8ïéÕˆ‚2J$25c14076-096c-434b-b071-e6a12d9f5dc2
+r
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8ğéÕˆ‚2J$1526c304-7637-40e5-964f-52449755b793

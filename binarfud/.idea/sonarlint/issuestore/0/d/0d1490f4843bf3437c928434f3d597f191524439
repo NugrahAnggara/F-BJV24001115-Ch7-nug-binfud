@@ -1,0 +1,9 @@
+
+u
+java:S1488\"`Immediately return this expression instead of assigning it to the temporary variable "delegate".(„áÄ^
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Éáÿ–úÿÿÿÿ
+x
+java:S3305'"]Inject this field value directly into "authenticationProvider", the only method that uses it.(Å¹›¡ÿÿÿÿÿ
+Q	java:S125H"<This block of commented-out lines of code should be removed.(¸¡í¤
+G
+java:S1611U"1Remove the parentheses around the "web" parameter(¥»çñ
